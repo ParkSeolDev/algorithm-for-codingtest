@@ -2,7 +2,7 @@ package Array;
 
 import java.util.*;
 
-class 실패율 {
+class Pro실패율 {
     public int[] solution(int N, int[] stages) {
         int[] answer = new int[N];
         

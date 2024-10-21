@@ -2,7 +2,7 @@ package Array;
 
 import java.util.ArrayList;
 
-class 방문길이 {
+class Pro방문길이 {
     public int solution(String dirs) {
         int answer = 0;
         int x = 0;

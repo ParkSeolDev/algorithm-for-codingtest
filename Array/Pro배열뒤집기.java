@@ -1,6 +1,6 @@
 package Array;
 
-class 배열뒤집기 {
+class Pro배열뒤집기 {
     public int[] solution(int[] num_list) {
         int[] answer = new int[num_list.length];
         

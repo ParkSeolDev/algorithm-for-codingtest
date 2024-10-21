@@ -1,6 +1,6 @@
 package Array;
 
-class 배열의평균값 {
+class Pro배열의평균값 {
     public double solution(int[] numbers) {
         double answer = 0;
         
