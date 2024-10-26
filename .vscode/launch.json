@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "BOJ3273",
+      "request": "launch",
+      "mainClass": "Array.BOJ3273",
+      "projectName": "algorithm-for-codingtest_99112e8e"
+    },
+    {
       "name": "Python: 현재 파일",
       "type": "python",
       "request": "launch",
