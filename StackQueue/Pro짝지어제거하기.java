@@ -1,3 +1,5 @@
+package StackQueue;
+
 import java.util.Stack;
 
 class Pro짝지어제거하기 {
