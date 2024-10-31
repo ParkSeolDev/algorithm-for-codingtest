@@ -4,15 +4,22 @@ import java.util.*;
 
 public class Pro주식가격 {
     public int[] solution(int[] prices) {
-		int[] answer = new int[prices.length];
+        int n = prices.length;
+        int[] answer = new int[n];
+        Stack<Integer> stack = new Stack<>();
 
-		for(int i = 0; i < prices.length; i++) {
-			for(int j = i + 1; j < prices.length; j++) {
-				answer[i]++;
-				if(prices[i] > prices[j]) 
-					break;
-			}
-		}
-		return answer;
-	}
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && prices[stack.peek()] > prices[i]) {
+                answer[stack.peek()] = i - stack.pop();
+            }
+
+            stack.push(i);
+        }
+
+        for (int time : stack) {
+            answer[time] = n - 1 - time;
+        }
+
+        return answer;
+    }
 }
